@@ -80,7 +80,8 @@ var getRelevantTopicQueue = new Queue(queueRef, getRelatedTopicOptions, function
                 .then(output => {
                     let response = {
                         input: inputString,
-                        output: output
+                        output: output,
+                        timestamp: new Date().toISOString()
                     };
                     return responseRef.child("getRelatedTopic").child(data.requestId).set(response)
                 })
