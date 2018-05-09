@@ -1,3 +1,4 @@
 node_modules/
 firebase-queue.code-workspace
 package-lock.json
+morphus-development-firebase-adminsdk.json
